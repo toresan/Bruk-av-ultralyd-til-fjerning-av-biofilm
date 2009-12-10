@@ -1,0 +1,35 @@
+abstract.tex:2:XXX Eg har sett på moglegheita for å ha kontroll over alle parametrar som er aktuelle i prosessen med å finne ut om ein kan nytte ultralyd for å fjerne bakteriar i ein vasstank eller eit reagensglas. Eksperimenteringa har vist at det er vanskeleg å få nøyaktig kontroll over måleresultata i eit reagensglas.
+arbeid.tex:3:XXX FIGUR AV OPPSETT
+arbeid.tex:5:XXX LISTE
+arbeid.tex:7:XXX SPECS PÅ UTSTYR
+arbeid.tex:9:XXX MÅLEMETODE INKL. PLASSERING AV UTSTYR
+arbeid.tex:12:XXX KORLEIS KUNNE FRAMGANGSMÅTEN HA BLITT BEDRE?
+arbeid.tex:14:XXX KVA MANGLA?
+diskusjon.tex:2:XXX DISKUTER RESULTAT
+diskusjon.tex:4:XXX KVIFOR BLEI DET SLIK?
+innleiing.tex:4:XXX Skrive at det også er å finne ut kva som tidlegare har blitt gjort og å finne ut korleis det utstyret verkar.
+innleiing.tex:6:XXX Motivasjon? - proteser, infeksjon, tidlegare suksess med ultralyd, billig måte å fjerne biofilm
+innleiing.tex:8:XXX Formål? Kva vil vi vite? Er det kavitasjon eller vibrasjon? frekvens? lydtrykk?
+kode.tex:3:XXX PLASSER MATLABKODE HER
+konklusjon.tex:2:XXX ER DETTE EIT GODT NOK MÅLEOPPSETT? (NEI. KVIFOR)
+konklusjon.tex:10:XXX MÅ OPPDATERE UTSTYRET
+konklusjon.tex:12:XXX SÅ GJERE FAKTISKE MÅLINGAR PÅ BIOFILM
+resultat.tex:2:XXX FIGUR: GRAFAR AV RESULTAT
+resultat.tex:4:XXX OBSERVERTE IKKJE KAVITASJON
+resultat.tex:6:XXX LÅGARE RYKK I KOLBE/REAGENSRØR
+resultat.tex:8:XXX UNDER MÅLING - STOR VARIASJON I LYDTRYKK FRÅ POSISJON TIL POSISJON, VANSKELEG Å BYTTE HYDROFONPOSISJON UTAN Å FLYTTE MÅLEPUNKT.
+tabellar.tex:3:XXX PLASSER TABELLAR HER
+teori.tex:5:XXX FIGUR AV BIOFILMDANNING
+teori.tex:9:XXX KORT OM KVA BAKTERIAR SOM OPPSTÅR I BIOFILM
+teori.tex:17:XXX FREKVENS OG BØLGJELENGD
+teori.tex:19:XXX EIGENSKAPAR UNDER VATN?
+teori.tex:22:XXX SOM ''EKKOLODD'' I MORS MAGE
+teori.tex:24:XXX TANNLEGE, FJERNE TANNSTEIN
+teori.tex:26:XXX ORDNE OPP I TETTE BLODÅRER
+teori.tex:37:XXX KAVITASJONSTERSKEL
+teori.tex:39:XXX FIGUR AV KAVITASJONSTERSKEL
+teori.tex:41:XXX BILETE AV KAVITASJON?
+teori.tex:44:XXX UTSTYR?
+teori.tex:46:XXX KORLEIS VIRKAR DET ENKLE UTSTYRET? FREKVENSSPEKTRUM
+teori.tex:48:XXX KVA PARAMETRAR SÅG DEI PÅ
+teori.tex:50:XXX MANGELFULLT, KVA SKULLE EIN YNSKT Å HA SETT PÅ?
