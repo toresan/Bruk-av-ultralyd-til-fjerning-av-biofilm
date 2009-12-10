@@ -1,6 +1,10 @@
 *~
 *.log
 *.pdf
+*.lof
+*.lot
+*.gz
+*.ttt
 *.out
 *.aux
 *.toc
