@@ -9,6 +9,7 @@
 \usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}
 \usepackage{amssymb}
+%\usepackage{IEEEtran}
 \usepackage{epstopdf}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
@@ -23,38 +24,7 @@
 \newpage
 \thispagestyle{empty}
 
-\begin{abstract}
-Eg har sett på moglegheita for å ha kontroll over alle parametrar som er aktuelle i prosessen med å finne ut om ein kan nytte ultralyd for å fjerne bakteriar i ein vasstank eller eit reagensglas. Eksperimenteringa har vist at det er vanskeleg å få nøyaktig kontroll over måleresultata i eit reagensglas.
-
-Sjølv om nøyaktigheita ikkje er optimal ser ein likevel at det kanskje er godt nok til dette formålet. 
-
--
-
--
-
--
-
--
-
--
-
-\emph{Første kapittel i rapporten skal være et sammendrag av hele rapporten. Passende lengde på sammendraget er ca. 1/3 - 1/2 side. Dette sammendraget vil gjenta innholdet i sammendraget fra forsida. I tillegg skal det gi så mange utfyllende opplysninger at det virkelig kan kalles et sammendrag av rapporten, ikke bare informasjon om hva arbeidet har bestått i. Gi også et sammendrag av de viktigste resultatene og hovedkonklusjonen eller overordnet vurdering. Resultatene skal ikke begrunnes i sammendraget, bare gjengis. Derimot skal det stå i sammendraget at rapporten inneholder en vurdering av resultatene.}
-
--
-
--
-
-\textbf{Sammendraget bør inneholde:}
-\begin{enumerate}
-\item Presisering av oppgavens hensikt
-\item Opplysninger om undersøkelsens omfang
-\item Oppgaver over de metoder som er benyttet
-\item Opplysninger om sikkerheten i de gitte opplysninger
-\item De viktigste resultatene
-\item Hvilke konklusjoner som er trukket
-\item Planer for oppfølging
-\end{enumerate}
-\end{abstract}
+\input{abstract}
 
 \newpage
 \tableofcontents
@@ -64,148 +34,33 @@ Sjølv om nøyaktigheita ikkje er optimal ser ein likevel at det kanskje er godt
 
 \newpage
 \setcounter{page}{1} 
-\section{Innleiing}
-Dette prosjektet tek for seg problem og moglegheiter ved eit måleoppsett for å måle alle parametrar som er nødvendig for å kunne finne ut om biofilm i eit reagensglas eller ein glaskolbe kan drepast/fjernast ved hjelp av ultralyd. Ein har allereie hatt noko suksess med å drepe bakteriar ved hjelp av ei maskin som opphavleg er laga for å reinse myntar, men maskina nytta i desse forsøka har ikkje vore optimalisert på nokon måte når det gjeld frekvens, lydtrykk eller temperatur på vatnet \cite{ultraprotese}. Ved å skape ein kontrollert målesituasjon kan vi sjå nærare på dei ulike parametrane som påverkar fjerning av biofilm.
-
-Skrive at det også er å finne ut kva som tidlegare har blitt gjort og å finne ut korleis det utstyret verkar.
-
-Motivasjon? - proteser, infeksjon, tidlegare suksess med ultralyd, billig måte å fjerne biofilm
-
-Formål? Kva vil vi vite? Er det kavitasjon eller vibrasjon? frekvens? lydtrykk?
-
+\input{innleiing}
 \clearpage
-\section{Bakgrunnsteori}
-\subsection{Biofilm}
-Ein biofilm er bakteriar som har ``grodd fast'' på ei eller anna overflate og har danna eit mikrobiologisk økosystem som er meir motstandsdyktig enn vanlege bakteriar åleine og biofilm kan bli danna på ei rekkje ulike overflater \cite{biofilm}\cite{biofilm2}. Dette vesle økosystemet utviklar seg til å bli noko meir enn bakteriar og innheld ofte alger og protozo. Biofilm kan også oppstå i kroppen vår på eigna stader. Særleg i samband med implantering av proteser, som t.d. hoftekuler eller kne, har det vist seg at biofilm er eit problem \cite{ultraprotese}. Under operasjon anten ved innsetting eller ved vedlikehald av protesene kan det lett kome bakteriar på protesen som etterkvart dannar ein biofilm på protesen som er særs motstandsdyktig mot immunsystemet. Denne biofilmen blir så årsaka til infeksjonar som kan oppstå fleire månedar etter operasjonen. 
 
-FIGUR AV BIOFILMDANNING
-
-For å gjere pasienten frisk frå ein slik infeksjon er det som regel ikkje nok å berre gi pasienten medisin, det må ein ny operasjon til for å fjerne infeksjonen og biofilmen\cite{infection}. Per i dag er det ingen billig god måte å få diagnose på ein slik infeksjon, men det byrjar å kome fleire forsøk som viser at ein kan nytte ultralyd i sambinding med diagnostiseringa og kanskje også til å fjerne biofilm fullstendig frå proteser \cite{ultraprotese}.
-
-KORT OM KVA BAKTERIAR SOM OPPSTÅR I BIOFILM
-\subsection{Undervassakustikk}
-\subsubsection*{Generelt}
-
-\subsubsection*{Lydfarten}
-
-\subsection{Ultralyd}
-\subsubsection*{Generelt}
-FREKVENS OG BØLGJELENGD
-
-EIGENSKAPAR UNDER VATN?
-
-\subsubsection*{Medisinsk bruk i dag}
-SOM ''EKKOLODD'' I MORS MAGE
-
-TANNLEGE, FJERNE TANNSTEIN
-
-ORDNE OPP I TETTE BLODÅRER
-
-\subsection{Kavitasjon}
-Kavitasjon oppstår når trykket på lydbølgja overgår det hydrostatiske trykket i vatnet.\cite{Kinsler:2000rc}
-
-KAVITASJONSTERSKEL
-
-FIGUR AV KAVITASJONSTERSKEL
-
-BILETE AV KAVITASJON?
-
-\subsection{Tidlegare arbeid FLYTTE?}
-UTSTYR?
-
-KORLEIS VIRKAR DET ENKLE UTSTYRET? FREKVENSSPEKTRUM
-
-KVA PARAMETRAR SÅG DEI PÅ
-
-MANGELFULLT, KVA SKULLE EIN YNSKT Å HA SETT PÅ?
-
+\input{teori}
 \clearpage
-\section{Arbeid}
-\subsection{Utstyr}
-FIGUR AV OPPSETT
 
-LISTE
-
-SPECS PÅ UTSTYR
-\subsection{Framgangsmåte}
-MÅLEMETODE INKL. PLASSERING AV UTSTYR
-
-\subsection{Analyse?}
-KORLEIS KUNNE FRAMGANGSMÅTEN HA BLITT BEDRE?
-
-KVA MANGLA?
-
+\input{arbeid}
 \clearpage
-\section{Resultat}
-FIGUR: GRAFAR AV RESULTAT
 
-OBSERVERTE IKKJE KAVITASJON
-
-LÅGARE RYKK I KOLBE/REAGENSRØR
-
-UNDER MÅLING - STOR VARIASJON I LYDTRYKK FRÅ POSISJON TIL POSISJON, VANSKELEG Å BYTTE HYDROFONPOSISJON UTAN Å FLYTTE MÅLEPUNKT.
-
-\section{Diskusjon}
-DISKUTER RESULTAT
-
-KVIFOR BLEI DET SLIK?
-
-
-
-På den eine sida så..
-
-På den andre sida derimot.
-
+\input{resultat}
+\input{diskusjon}
 \clearpage
-\section{Konklusjon, vidare arbeid}
-ER DETTE EIT GODT NOK MÅLEOPPSETT? (NEI. KVIFOR)
 
-Vi kan seie at..
-
-Det ser ut til at..
-
-Dette fører til at vi må ha (/ har det vi treng)..
- 
-MÅ OPPDATERE UTSTYRET
-
-SÅ GJERE FAKTISKE MÅLINGAR PÅ BIOFILM
-
+\input{konklusjon}
 \clearpage
-\begin{thebibliography}{99} 
-\bibitem{ultraprotese}T. Monsen, E. Lövgren,M. Widerström og L. Wallinder. ``In Vitro Effect of Ultrasound on Bacteria and Suggested Protocol for Sonication and Diagnosis of Prosthetic Infections''. \textit{Journal Of Clinical Microbiology}, vol. 47, nr. 8, s. 2496–2501, aug. 2009.
-\bibitem{biofilm}J. Bartram. \textit{Legionella and the prevention of legionellosis}. Geneve: World Health Organization, 2007, s. 33-35.
-\bibitem{biofilm2}R. Singh. \textit{Dictionary of Biotechnology}. New Delhi: Sarup \& Sons, 2001, s. 19-21.
-\bibitem{infection}J. Del Pozo, R. Patel. ``Infection Associated with Prosthetic Joints''. \textit{New England Journal of Medicine}, vol. 361, nr. 8, s. 787-794, aug. 2009.
-\bibitem{Kinsler:2000rc}Kinsler, Frey, Coppens og Sanders. \textit{Fundamentals of acoustics}. New York: Wiley, 2000, s. 145.
-\bibitem{kavitasjon}J. \u{S}poner. ``Dependence of the cavitation threshold on the ultrasonic frequency''. \textit{Czechoslovak Journal of Physics}, vol. 40, nr. 10, s 1123-1132, okt. 1990.
 
-
-\end{thebibliography}
-
+%\input{kjelder}
 \appendix
 
-PLASSER TABELLAR HER
-
-\section{Tabellar}
-
-\begin{table}[h!]
-	\begin{center}
-		\begin{tabular}{ | l | c | r | }
-			\hline
-			11 & 12 & 13 \\ \hline
-			21 & 22 & 23 \\ \hline
-			31 & 32 & 33 \\ 
-			\hline
-		\end{tabular}
-		\caption{Denne tabellen er fin}
-		\label{tab:tabelltest}
-	\end{center}
-\end{table}
-
+\input{tabellar}
 \clearpage
-\newpage
-\section{Kode}
 
-PLASSER MATLABKODE HER
+\newpage
+\input{kode}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{Bibliografi} 
 
 \end{document} 
