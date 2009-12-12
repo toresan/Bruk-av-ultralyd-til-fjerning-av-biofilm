@@ -12,18 +12,14 @@ Særleg i samband med implantering av proteser, som t.d. hoftekuler eller kne, h
 
 For å gjere pasienten frisk frå ein slik infeksjon er det som regel ikkje nok å berre gi pasienten medisin, det må ein ny operasjon til for å fjerne infeksjonen og biofilmen\cite{infection}. Per i dag er det ingen billig god måte å få diagnose på ein slik infeksjon, men det byrjar å kome fleire forsøk som viser at ein kan nytte ultralyd i sambinding med diagnostiseringa og kanskje også til å fjerne biofilm fullstendig frå proteser \cite{ultraprotese}.
 
+\subsection{Undervassakustikk}
+Det viktigaste ein må tenkje på når det gjeld lydbølgjer i vatn er at bølgjene får ein anna fart enn i t.d. luft. I vanleg ferskvatn nær overflata er farten på lydbølgjer lik $c = \unit{1481}{\meter / \second}$ når vatnet har romtemperatur \cite[s. 630]{citeulike:4412590}.
 \subsection{Ultralyd}
 \subsubsection*{Generelt}
 Ultralyd er i \cite[s. 443]{citeulike:4412590} definert som all lyd med frekvens over \unit{20}{\kilo \hertz} og i dette prosjektet skal vi særleg halde oss i frekvensområdet \unit{20 - 200}{\kilo \hertz}. Og sidan alle forsøka i dette prosjektet går føre seg under vatn, vil bølgjelengda gitt ved $\lambda = c / f$, der $c = \unit{1481}{\meter / \second}$, bli mellom \unit{7 - 74}{\milli\meter}.
 
 \subsubsection*{Medisinsk bruk i dag}
 Vi har i dag ein utstrakt bruk av ultralyd innan medisin og det fins mange bruksområder for ultralyd. Mellom anna blir ultralyd nytta til medisinsk avbilding i samband med diagnostikk, som t.d. undersøking av gravide eller pasientar med hjertefeil, og ultralyden blir då nytta som eit slags ekkolodd for å sjå inn i kroppen vår. Ultralyd er også vanleg i meir terapautiske samanhengar. Nyresteinar kan fjernast ved å knuse dei med ultralyd som har høg intensitet og som er fokusert spesielt mot nyresteinen. Elles kan ein også nemne at ultralyd er blir nytta av tannlækjarar til å reinse tenner.
-
-\subsection{Undervassakustikk}
-
-\subsubsection*{Generelt}
-
-\subsubsection*{Lydfarten}
 
 \subsection{Kavitasjon}
 Kavitasjon oppstår når trykket på lydbølgja overgår det hydrostatiske trykket i vatnet.\cite{Kinsler:2000rc}
@@ -32,7 +28,7 @@ Kavitasjonsterskelen er grovt gitt\cite{kavitasjon} med formel \eqref{kavitasjon
 
 \begin{equation}
 \label{kavitasjonsterskel}
-P_t = 0.06 + 0.05f
+P_t = 60 + 50f, \qquad \text{der } P_t \text{ er i } \kilo\pascal \text{ og } f \text{ i } \kilo\hertz
 \end{equation}
 
 \begin{eqnarray}
@@ -49,11 +45,13 @@ XXX FIGUR AV KAVITASJONSTERSKEL
 
 XXX BILETE AV KAVITASJON?
 
-\subsection{Tidlegare arbeid FLYTTE?}
-XXX UTSTYR?
+\subsection{Tidlegare arbeid XXX FLYTTE?}
+I tidlegare forsøk med biofilm og ultralyd har det mellom anna blitt nytta eit ultralydapparat som vanlegvis er nytta innan industrien til å reinse myntar eller klokker \cite{sonorex}. Apparatet i bruk har med andre ord ikkje blitt utvikla spesielt med tanke på proteser og biofilm. Tidlegare forsøk er også stort sett utført av personar med berre medisinsk bakgrunn og ikkje akustisk og forsøka ber preg av manglande innsikt i korleis ultralyd verkar og kva effekt ein kan få av kavitasjon.
 
-XXX KORLEIS VIRKAR DET ENKLE UTSTYRET? FREKVENSSPEKTRUM
+Apparatet som er brukt i \cite{ultraprotese} består av ein liten kum til å ha vatn i, 2 transducerar og innebygd varming av vatnet med termostat. Dersom vi ser nærare på apparatet, så ser vi på figur XXX at det berre har to innstillingar ein sjølv kan endre på, temperatur og ein timer som bestemmer kor lenge det skal stå på. Ein kan ikkje kontrollere frekvensen eller lydtrykket i tanken. I spesifikasjonane \cite{sonorex} står det at apparatet opererer på \unit{35}{\kilo\hertz}, men målingar med oscilloskop viser at transducerane i tanken opererer på omlag \unit{39}{\kilo\hertz} og at det er tydelige harmoniske frekvensar over dette. Det maksimale lydtrykket i tanken blei målt til \unit{225}{\kilo\pascal} eller \unit{227}{\deci\bel}. Noko som er nok til at XXX vatnet kan kavitere. 
 
-XXX KVA PARAMETRAR SÅG DEI PÅ
+XXX FREKVENSSPEKTRUM I PENGERENSMASKIN
 
-XXX MANGELFULLT, KVA SKULLE EIN YNSKT Å HA SETT PÅ?
+I desse forsøka blei det sett nærare på korleis temperaturen og lengda i tid biofilmen vart utsett for ultralyd påverka biofilmen. Dette blei gjort for seks ulike bakteriar der det viste seg at nokon var motstandsdyktige uansett tilhøve medan andre andre bakteriar blei drepne under rette tilhøve. Men med berre ein frekvens og eit relativt konstant lydtrykk, så er det uvisst om dette er dei beste tilhøva for å fjerne biofilm frå proteser. Det kan vere at det er betre med andre frekvensar for dei bakteriane som tolte påkjenninga frå ultralyden i denne tanken eller at lydtrykket rett og slett er for lågt. Difor er det nødvendig med ei grundigare undersøking av dei akustiske parametrane.
+
+Det som vil vere viktig å få oversikt over er korleis biofilmen oppfører seg ved ulike frekvensar og korleis varierande lydtrykk kan påverke biofilmen. Samstundes er det viktig å ta med seg dei parametrane som ein nytta i første forsøk. Temperaturen er viktig både med tanke på bakteriane i biofilmen og for kavitasjonsterskelen i vatnet, og ein bør også ta med seg tidsaspektet vidare.

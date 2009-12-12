@@ -1,10 +1,10 @@
 abstract.tex:2:XXX Eg har sett på moglegheita for å ha kontroll over alle parametrar som er aktuelle i prosessen med å finne ut om ein kan nytte ultralyd for å fjerne bakteriar i ein vasstank eller eit reagensglas. Eksperimenteringa har vist at det er vanskeleg å få nøyaktig kontroll over måleresultata i eit reagensglas.
-arbeid.tex:3:XXX FIGUR AV OPPSETT
-arbeid.tex:5:XXX LISTE
-arbeid.tex:7:XXX SPECS PÅ UTSTYR
-arbeid.tex:9:XXX MÅLEMETODE INKL. PLASSERING AV UTSTYR
-arbeid.tex:12:XXX KORLEIS KUNNE FRAMGANGSMÅTEN HA BLITT BEDRE?
-arbeid.tex:14:XXX KVA MANGLA?
+arbeid.tex:4:XXX Serienummer!
+arbeid.tex:18:XXX ENKEL FIGUR AV OPPSETT
+arbeid.tex:20:XXX SPECS PÅ UTSTYR? Kanskje mtp. lydkortet, 192 kHz samplerate.
+arbeid.tex:22:XXX MÅLEMETODE INKL. PLASSERING AV UTSTYR
+arbeid.tex:25:XXX KORLEIS KUNNE FRAMGANGSMÅTEN HA BLITT BEDRE?
+arbeid.tex:27:XXX KVA MANGLA?
 diskusjon.tex:2:XXX DISKUTER RESULTAT
 diskusjon.tex:4:XXX KVIFOR BLEI DET SLIK?
 kode.tex:3:XXX PLASSER MATLABKODE HER
@@ -16,10 +16,9 @@ resultat.tex:4:XXX OBSERVERTE IKKJE KAVITASJON
 resultat.tex:6:XXX LÅGARE RYKK I KOLBE/REAGENSRØR
 resultat.tex:8:XXX UNDER MÅLING - STOR VARIASJON I LYDTRYKK FRÅ POSISJON TIL POSISJON, VANSKELEG Å BYTTE HYDROFONPOSISJON UTAN Å FLYTTE MÅLEPUNKT.
 tabellar.tex:15:XXX PLASSER ALLE TABELLAR HER
-teori.tex:46:XXX KAVITASJONSTERSKEL
-teori.tex:48:XXX FIGUR AV KAVITASJONSTERSKEL
-teori.tex:50:XXX BILETE AV KAVITASJON?
-teori.tex:53:XXX UTSTYR?
-teori.tex:55:XXX KORLEIS VIRKAR DET ENKLE UTSTYRET? FREKVENSSPEKTRUM
-teori.tex:57:XXX KVA PARAMETRAR SÅG DEI PÅ
-teori.tex:59:XXX MANGELFULLT, KVA SKULLE EIN YNSKT Å HA SETT PÅ?
+teori.tex:42:XXX KAVITASJONSTERSKEL
+teori.tex:44:XXX FIGUR AV KAVITASJONSTERSKEL
+teori.tex:46:XXX BILETE AV KAVITASJON?
+teori.tex:48:\subsection{Tidlegare arbeid XXX FLYTTE?}
+teori.tex:51:Apparatet som er brukt i \cite{ultraprotese} består av ein liten kum til å ha vatn i, 2 transducerar og innebygd varming av vatnet med termostat. Dersom vi ser nærare på apparatet, så ser vi på figur XXX at det berre har to innstillingar ein sjølv kan endre på, temperatur og ein timer som bestemmer kor lenge det skal stå på. Ein kan ikkje kontrollere frekvensen eller lydtrykket i tanken. I spesifikasjonane \cite{sonorex} står det at apparatet opererer på \unit{35}{\kilo\hertz}, men målingar med oscilloskop viser at transducerane i tanken opererer på omlag \unit{39}{\kilo\hertz} og at det er tydelige harmoniske frekvensar over dette. Det maksimale lydtrykket i tanken blei målt til \unit{225}{\kilo\pascal} eller \unit{227}{\deci\bel}. Noko som er nok til at XXX vatnet kan kavitere. 
+teori.tex:53:XXX FREKVENSSPEKTRUM I PENGERENSMASKIN
