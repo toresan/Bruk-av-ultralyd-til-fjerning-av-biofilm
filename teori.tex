@@ -3,9 +3,10 @@
 Ein biofilm er bakteriar som har ``grodd fast'' på ei eller anna overflate og har danna eit mikrobiologisk økosystem som er meir motstandsdyktig enn vanlege bakteriar åleine og biofilm kan bli danna på ei rekkje ulike overflater \cite{biofilm}\cite{biofilm2}. Dette vesle økosystemet utviklar seg til å bli noko meir enn bakteriar og innheld ofte alger og protozo. Figur \ref{fig:biofilm} viser korleis utviklinga av biofilm går føre seg og det er særleg når biofilmen når det fjerde stadiet at den kan bli skadeleg. Økosystemet kan vere med på å lage nye bakteriar som t.d. Legionella \cite{biofilm} og dersom biofilmen oppstår i kroppen vår kan dette skape infeksjonar.
 
 \begin{figure}[htbp]
-  \includegraphics{bilete/DanningAvBiofilm.pdf}
-  \caption[Dei fem fasene i biofilmdanning]{1) Bakterien finn ein overflate. 2) Bakterien festar seg permanent. 3) Bakterien er i første fase av å danne biofilm 4) Biofilmen blir danna ferdig og skapar nye bakteriar. 5) Biofilmen spreier nye bakteriar ut til omgivnadane. Figuren er henta frå \cite{biofilmfigur}.}
-  \label{fig:biofilm}
+	\centering
+	\includegraphics[width = 0.8\textwidth]{bilete/DanningAvBiofilm.pdf}
+  	\caption[Dei fem fasene i biofilmdanning]{1) Bakterien finn ein overflate. 2) Bakterien festar seg permanent. 3) Bakterien er i første fase av å danne biofilm 4) Biofilmen blir danna ferdig og skapar nye bakteriar. 5) Biofilmen spreier nye bakteriar ut til omgivnadane. Figuren er henta frå \cite{biofilmfigur}.}
+  	\label{fig:biofilm}
 \end{figure}
 
 Særleg i samband med implantering av proteser, som t.d. hoftekuler eller kne, har det vist seg at biofilm er eit problem \cite{ultraprotese}. Under operasjon anten ved innsetting eller ved vedlikehald av protesene kan det lett kome bakteriar på protesen som etterkvart dannar ein biofilm på protesen som er særs motstandsdyktig mot immunsystemet. Denne biofilmen blir så årsaka til infeksjonar som kan oppstå fleire månedar etter operasjonen. 
@@ -38,20 +39,27 @@ P_t = 60 + 50f, \qquad \text{der } P_t \text{ er i } \kilo\pascal \text{ og } f 
 	p = \sqrt{998* 1481 * i * 2} 
 \end{eqnarray}
 
-
 XXX KAVITASJONSTERSKEL
 
 XXX FIGUR AV KAVITASJONSTERSKEL
 
 XXX BILETE AV KAVITASJON?
+\subsection{Nyquistraten}
+\label{nyquist}
+Når ein jobbar med digitale signal, til dømes dersom ein skal gjere eit lydopptak på PC, så er det viktig å tenkje på Nyquistraten og kanskje særleg når ein jobbar med dei høge frekvensane ein finn i ultralyd. Samplingsteoremet til Nyquist lyder som følgjer:
 
-\subsection{Tidlegare arbeid XXX FLYTTE?}
-I tidlegare forsøk med biofilm og ultralyd har det mellom anna blitt nytta eit ultralydapparat som vanlegvis er nytta innan industrien til å reinse myntar eller klokker \cite{sonorex}. Apparatet i bruk har med andre ord ikkje blitt utvikla spesielt med tanke på proteser og biofilm. Tidlegare forsøk er også stort sett utført av personar med berre medisinsk bakgrunn og ikkje akustisk og forsøka ber preg av manglande innsikt i korleis ultralyd verkar og kva effekt ein kan få av kavitasjon.
+\begin{quote}
+If the highest frequency contained in an analog signal $x_a(t)$ is $F_{max} = B$ and the signal is sampled at a rate $F_s > 2F_{max} \equiv 2B$, then $x_a(t)$ can be exactly recovered from its sample values using the interpolation function
 
-Apparatet som er brukt i \cite{ultraprotese} består av ein liten kum til å ha vatn i, 2 transducerar og innebygd varming av vatnet med termostat. Dersom vi ser nærare på apparatet, så ser vi på figur XXX at det berre har to innstillingar ein sjølv kan endre på, temperatur og ein timer som bestemmer kor lenge det skal stå på. Ein kan ikkje kontrollere frekvensen eller lydtrykket i tanken. I spesifikasjonane \cite{sonorex} står det at apparatet opererer på \unit{35}{\kilo\hertz}, men målingar med oscilloskop viser at transducerane i tanken opererer på omlag \unit{39}{\kilo\hertz} og at det er tydelige harmoniske frekvensar over dette. Det maksimale lydtrykket i tanken blei målt til \unit{225}{\kilo\pascal} eller \unit{227}{\deci\bel}. Noko som er nok til at XXX vatnet kan kavitere. 
+\begin{equation}
+g(t) = \frac{sin 2\pi Bt}{2\pi Bt}
+\end{equation}
 
-XXX FREKVENSSPEKTRUM I PENGERENSMASKIN
+(...) The sampling rate $F_N = 2B = 2F_{max}$ is called the \emph{Nyquist rate} \cite[s. 28]{Proakis:2006fk}.
+\end{quote}
 
-I desse forsøka blei det sett nærare på korleis temperaturen og lengda i tid biofilmen vart utsett for ultralyd påverka biofilmen. Dette blei gjort for seks ulike bakteriar der det viste seg at nokon var motstandsdyktige uansett tilhøve medan andre andre bakteriar blei drepne under rette tilhøve. Men med berre ein frekvens og eit relativt konstant lydtrykk, så er det uvisst om dette er dei beste tilhøva for å fjerne biofilm frå proteser. Det kan vere at det er betre med andre frekvensar for dei bakteriane som tolte påkjenninga frå ultralyden i denne tanken eller at lydtrykket rett og slett er for lågt. Difor er det nødvendig med ei grundigare undersøking av dei akustiske parametrane.
-
-Det som vil vere viktig å få oversikt over er korleis biofilmen oppfører seg ved ulike frekvensar og korleis varierande lydtrykk kan påverke biofilmen. Samstundes er det viktig å ta med seg dei parametrane som ein nytta i første forsøk. Temperaturen er viktig både med tanke på bakteriane i biofilmen og for kavitasjonsterskelen i vatnet, og ein bør også ta med seg tidsaspektet vidare.
+Noko som vil seie at for ein PC med eit lydkort, så er $F_{max}$, den høgste frekvensen vi kan måle nøyaktig på PC'en, gitt som
+\begin{equation}
+F_{max} = \frac{1}{2}F_s
+\end{equation}
+der $F_s$ er lydkortet sin maksimale samplingsrate.

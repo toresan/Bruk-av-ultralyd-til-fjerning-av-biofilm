@@ -1,27 +1,39 @@
 \section{Arbeid}
 \subsection{Utstyr}
-
-XXX Serienummer!
-
+Følgjande utstyr blei nytta i samband med dette prosjektet:
 \begin{itemize}
-\item Sonorex Lifelong RK 255 H
-\item Wavetek 178 \unit{50}{\mega\hertz} Programmable Waveform Synthesizer
-\item ENI 240L RF Power Amplifier
-\item Skipper 11 x 19${}^\circ$ Transducer
-\item Brüel \& Kjær 8103 Hydrofon
-\item Brüel \& Kjær 4229 Hydrofon Kalibrator
-\item Brüel \& Kjær 2635 Ladningsforsterker
-\item LeCroy 9410 Dual \unit{150}{\mega\hertz} Oscilloscope
-\item RME Fireface 800 lydkort
+\item Bandelin Sonorex Lifelong RK 255 H \textit{(Serienr.: 316.00024319.013)}
+\item Wavetek 178 \unit{50}{\mega\hertz} Programmable Waveform Synthesizer \textit{(Serienr.: AC6590409)}
+\item ENI 240L RF Power Amplifier \textit{(Serienr.: 1019)}
+\item Skipper $11\text{ x }{19}^\circ$ Transducer \textit{(Serienr.: ikkje tilgjengeleg)}
+\item Brüel \& Kjær 8103 Hydrofon \textit{(Serienr.: 1080718)}
+\item Brüel \& Kjær 4223 Hydrofon Kalibrator \textit{(Serienr.: 1152567)}
+\item Brüel \& Kjær 2635 Ladningsforsterker \textit{(Serienr.: 1156191)}
+\item LeCroy 9410 Dual \unit{150}{\mega\hertz} Oscilloscope \textit{(Serienr.: 94102589)}
+\item RME Fireface 800 lydkort \textit{(Serienr.: 22354109)}
 \end{itemize}
 
-XXX ENKEL FIGUR AV OPPSETT
+Og vidare ein Macbook Pro med følgjande programvare:
 
-XXX SPECS PÅ UTSTYR? Kanskje mtp. lydkortet, 192 kHz samplerate.
+\begin{itemize}
+\item Logic Pro 8.0.2
+\item Matlab R2009b
+\end{itemize}
+
+Det kan vere viktig å merke seg avgrensingane ved ustyret i denne lista. Ved måling gjennom RME lydkortet og vidare til PC har vi ei øvre grense for kva frekvensar vi kan måle på grunn av lydkortet sin maksimale samplingsrate på \unit{192}{\kilo\hertz} som ved Nyquist sitt teorem presentert på side \pageref{nyquist} gjev oss den øvre grensa på \unit{96}{\kilo\hertz}. Ladningsforsterkaren til Brüel og Kjær gjev oss óg ein øvre frekvens ved måling på oscilloskopet som i manualen er gitt som \unit{200}{\kilo\hertz} \cite{ladnforsterker} og i tillegg har hydrofonen ein øvre frekvens gitt i manualen som \unit{180}{\kilo\hertz}\cite{hydrofon}. Transduceren har høgast virkningsgrad ved \unit{38}{\kilo\hertz}. 
+
 \subsection{Framgangsmåte}
-XXX MÅLEMETODE INKL. PLASSERING AV UTSTYR
+\subsubsection*{Bandelin Sonorex}
+For å undersøkje korleis utstyret nytta i \cite{ultraprotese} fungerte blei det gjort målingar i Sonorextanken for å finne eigenskapane til apparatet. Det blei først gjort undersøkingar ved hjelp av oscilloskop for å få eit første inntrykk av signalet i tanken. Deretter blei det gjort målingar gjennom eit lydkort til ein PC. For å få korrekte verdiar blei dei utført målingar både med hydrofon i kalibrator og så med hydrofon i tanken som deretter blei korrigert i Matlab med kode vist i appendiks \ref{sec:Kode}. Kalibreringsdata blei henta frå \cite{calibrator}. Hydrofonen blei kobla på ein ladningsforsterker frå Brüel og Kjær som vidare blei kobla på oscilloskop og til lydkortet. På PC'en vart opptaka gjort i Logic Pro før dei så blei behandla i Matlab.
 
-\subsection{Analyse?}
-XXX KORLEIS KUNNE FRAMGANGSMÅTEN HA BLITT BEDRE?
+\subsubsection*{Eige oppsett}
+I målingar med eige oppsett blei ustyret satt opp som vist i figur \ref{fig:maaleoppsett}.
 
-XXX KVA MANGLA?
+\begin{figure}[htbp]
+	\centering
+  	\includegraphics[width=0.8\textwidth]{bilete/maaleoppsett.pdf}
+  	\caption[Måleoppsett]{Figuren viser korleis måleoppsettet har blitt satt opp. Hydrofonen hadde same plassering både for målingar med og uten glaskolbe. For målingar i Sonorex-tanken har same måleoppsett blitt nytta på målesida. I tillegg til utstyret vist på figuren blei det også nytta eit termometer for å halde auge med temperaturen i vatnet.}
+  	\label{fig:maaleoppsett}
+\end{figure}
+
+Hydrofonen blei plassert 34cm frå transduceren midt på retninga den sender ut sterkast signal, altså ${0}^\circ$ på transduceren. Transduceren blei plassert rett ved ein av kortveggane i måletanken. Dimensjonen på tanken er \unit{1x0.5x0.5}{\metre}.
