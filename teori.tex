@@ -5,7 +5,7 @@ Ein biofilm er bakteriar som har ``grodd fast'' på ei eller anna overflate og h
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width = 0.8\textwidth]{bilete/DanningAvBiofilm.pdf}
-  	\caption[Dei fem fasene i biofilmdanning]{1) Bakterien finn ein overflate. 2) Bakterien festar seg permanent. 3) Bakterien er i første fase av å danne biofilm 4) Biofilmen blir danna ferdig og skapar nye bakteriar. 5) Biofilmen spreier nye bakteriar ut til omgivnadane. Figuren er henta frå \cite{biofilmfigur}.}
+  	\caption[Dei fem fasene i biofilmdanning]{1) Bakterien finn ein overflate. 2) Bakterien festar seg permanent. 3) Bakterien er i første fase av å danne biofilm 	4) Biofilmen blir danna ferdig og skapar nye bakteriar. 5) Biofilmen spreier nye bakteriar ut til omgivnadane. Figuren er henta frå \cite{biofilmfigur}.}
   	\label{fig:biofilm}
 \end{figure}
 
@@ -20,46 +20,41 @@ Det viktigaste ein må tenkje på når det gjeld lydbølgjer i vatn er at bølgj
 Ultralyd er i \cite[s. 443]{citeulike:4412590} definert som all lyd med frekvens over \unit{20}{\kilo \hertz} og i dette prosjektet skal vi særleg halde oss i frekvensområdet \unit{20 - 200}{\kilo \hertz}. Og sidan alle forsøka i dette prosjektet går føre seg under vatn, vil bølgjelengda gitt ved $\lambda = c / f$, der $c = \unit{1481}{\meter / \second}$, bli mellom \unit{7 - 74}{\milli\meter}.
 
 \subsubsection*{Medisinsk bruk i dag}
-Vi har i dag ein utstrakt bruk av ultralyd innan medisin og det fins mange bruksområder for ultralyd. Mellom anna blir ultralyd nytta til medisinsk avbilding i samband med diagnostikk, som t.d. undersøking av gravide eller pasientar med hjertefeil, og ultralyden blir då nytta som eit slags ekkolodd for å sjå inn i kroppen vår. Ultralyd er også vanleg i meir terapautiske samanhengar. Nyresteinar kan fjernast ved å knuse dei med ultralyd som har høg intensitet og som er fokusert spesielt mot nyresteinen. Elles kan ein også nemne at ultralyd er blir nytta av tannlækjarar til å reinse tenner.
+Vi har i dag ein utstrakt bruk av ultralyd innan medisin og det fins mange bruksområder for ultralyd. Mellom anna blir ultralyd nytta til medisinsk avbilding i samband med diagnostikk, som t.d. undersøking av gravide eller pasientar med hjertefeil, og ultralyden blir då nytta som eit slags ekkolodd for å sjå inn i kroppen vår. Ultralyd er også vanleg i meir terapautiske samanhengar. Nyresteinar kan fjernast ved å knuse dei med ultralyd som har høg intensitet og som er fokusert spesielt mot nyresteinen. Elles kan ein også nemne at ultralyd er blir nytta av tannlækjarar til å reinse tenner. 
 
 \subsection{Kavitasjon}
-Kavitasjon oppstår når trykket på lydbølgja overgår det hydrostatiske trykket i vatnet.\cite{Kinsler:2000rc}
-
-Kavitasjonsterskelen er grovt gitt\cite{kavitasjon} med formel \eqref{kavitasjonsterskel} eller \eqref{kavitasjonsterskel2}
+Kavitasjon kan oppstå når trykket på lydbølgja overgår det hydrostatiske trykket i vatnet \cite{Kinsler:2000rc}. Dette trykket er oftast gitt som ein terskelen som det akustiske trykket må vere større enn for at kavitasjon skal oppstå. Ved eksperiment så er kavitasjonsterskelen grovt gitt av formel \eqref{kavitasjonsterskel} \cite{kavitasjon}.
 
 \begin{equation}
-\label{kavitasjonsterskel}
-P_t = 60 + 50f, \qquad \text{der } P_t \text{ er i } \kilo\pascal \text{ og } f \text{ i } \kilo\hertz
+	\label{kavitasjonsterskel}
+	P_t = 60 + 0.05f, \qquad \text{der } P_t \text{ er i } \kilo\pascal \text{ og } f \text{ i } \kilo\hertz
 \end{equation}
 
-\begin{eqnarray}
-	\label{kavitasjonsterskel2}
-	\frac{p^2_{rms}}{\rho c} = I \\
-	p_{rms} = \sqrt{\rho* c * i} \\
-	p = \sqrt{998* 1481 * i * 2} 
-\end{eqnarray}
+Figur \ref{fig:kavitasjonsterskel} viser verdiar for denne formelen for frekvensområdet \unit{20 - 200}{\kilo\hertz}.
 
-XXX KAVITASJONSTERSKEL
+\begin{figure}[htbp]
+	\centering
+	\label{fig:kavitasjonsterskel}
+	\includegraphics[width=0.8\textwidth]{bilete/kavitasjonsterskel.pdf}
+	\caption[Variasjon i kavitasjonsterskel som funksjon av frekvens]{Variasjon i kavitasjonsterskel som funksjon av frekvens for området \unit{20 - 200}{\kilo	\hertz}. Frekvensen er gitt i {\kilo\hertz} og kavitasjonsterskelen er gitt som det akustiske trykket i {\kilo\pascal} ei lydbølgje må ha for å oppnå kavitasjon.}
+\end{	figure}
 
-XXX FIGUR AV KAVITASJONSTERSKEL
-
-XXX BILETE AV KAVITASJON?
 \subsection{Nyquistraten}
 \label{nyquist}
 Når ein jobbar med digitale signal, til dømes dersom ein skal gjere eit lydopptak på PC, så er det viktig å tenkje på Nyquistraten og kanskje særleg når ein jobbar med dei høge frekvensane ein finn i ultralyd. Samplingsteoremet til Nyquist lyder som følgjer:
 
 \begin{quote}
-If the highest frequency contained in an analog signal $x_a(t)$ is $F_{max} = B$ and the signal is sampled at a rate $F_s > 2F_{max} \equiv 2B$, then $x_a(t)$ can be exactly recovered from its sample values using the interpolation function
+	If the highest frequency contained in an analog signal $x_a(t)$ is $F_{max} = B$ and the signal is sampled at a rate $F_s > 2F_{max} \equiv 2B$, then 		$x_a(t)$ can be exactly recovered from its sample values using the interpolation function
 
-\begin{equation}
-g(t) = \frac{sin 2\pi Bt}{2\pi Bt}
-\end{equation}
+	\begin{equation}
+		g(t) = \frac{sin 2\pi Bt}{2\pi Bt}
+	\end{equation}
 
-(...) The sampling rate $F_N = 2B = 2F_{max}$ is called the \emph{Nyquist rate} \cite[s. 28]{Proakis:2006fk}.
+	(...) The sampling rate $F_N = 2B = 2F_{max}$ is called the \emph{Nyquist rate} \cite[s. 28]{Proakis:2006fk}.
 \end{quote}
 
 Noko som vil seie at for ein PC med eit lydkort, så er $F_{max}$, den høgste frekvensen vi kan måle nøyaktig på PC'en, gitt som
 \begin{equation}
-F_{max} = \frac{1}{2}F_s
+	F_{max} = \frac{1}{2}F_s
 \end{equation}
 der $F_s$ er lydkortet sin maksimale samplingsrate.

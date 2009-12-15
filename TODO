@@ -1,21 +1,5 @@
 abstract.tex:2:XXX Eg har sett på moglegheita for å ha kontroll over alle parametrar som er aktuelle i prosessen med å finne ut om ein kan nytte ultralyd for å fjerne bakteriar i ein vasstank eller eit reagensglas. Eksperimenteringa har vist at det er vanskeleg å få nøyaktig kontroll over måleresultata i eit reagensglas.
-diskusjon.tex:3:XXX DISKUTER RESULTAT
-diskusjon.tex:5:XXX KVIFOR BLEI DET SLIK?
-diskusjon.tex:12:XXX KORLEIS KUNNE FRAMGANGSMÅTEN HA BLITT BEDRE?
-diskusjon.tex:14:XXX KVA MANGLA?
-diskusjon.tex:16:XXX UNDER MÅLING - STOR VARIASJON I LYDTRYKK FRÅ POSISJON TIL POSISJON, VANSKELEG Å BYTTE HYDROFONPOSISJON UTAN Å FLYTTE MÅLEPUNKT.
-diskusjon.tex:20:XXX MANGLANDE FORSTERKAR
-diskusjon.tex:22:XXX PROBLEM MED MÅLINGAR VIA RME->MAC->LOGIC PRO
-konklusjon.tex:2:XXX ER DETTE EIT GODT NOK MÅLEOPPSETT? (NEI. KVIFOR)
-konklusjon.tex:10:XXX MÅ OPPDATERE UTSTYRET
-konklusjon.tex:12:XXX SÅ GJERE FAKTISKE MÅLINGAR PÅ BIOFILM
-resultat.tex:12:Apparatet som er brukt i \cite{ultraprotese} består av ein liten kum til å ha vatn i, 2 transducerar og innebygd varming av vatnet med termostat. Dersom vi ser nærare på apparatet, så ser vi på figur \ref{fig:effektsonorex} at det berre har to innstillingar ein sjølv kan endre på, temperatur og ein timer som bestemmer kor lenge det skal stå på. Ein kan ikkje kontrollere frekvensen eller lydtrykket i tanken. I spesifikasjonane \cite{sonorex} står det at apparatet opererer på \unit{35}{\kilo\hertz}, men målingar med oscilloskop viser at transducerane i tanken opererer på omlag \unit{39}{\kilo\hertz} og at det er tydelige harmoniske frekvensar over dette. Det maksimale lydtrykket i tanken blei målt til \unit{225}{\kilo\pascal} eller \unit{227}{\deci\bel}. Noko som er nok til at XXX vatnet kan kavitere. 
-resultat.tex:54:\caption[Effektspektrum av måletank utan glaskolbe]{XXX}
-resultat.tex:61:\caption[Effektspektrum av måletank med glaskolbe]{XXX}
-resultat.tex:67:XXX FIGUR: GRAFAR AV RESULTAT
-resultat.tex:69:XXX OBSERVERTE IKKJE KAVITASJON
-resultat.tex:71:XXX LÅGARE RYKK I KOLBE/REAGENSRØR
-tabellar.tex:15:XXX PLASSER ALLE TABELLAR HER
-teori.tex:42:XXX KAVITASJONSTERSKEL
-teori.tex:44:XXX FIGUR AV KAVITASJONSTERSKEL
-teori.tex:46:XXX BILETE AV KAVITASJON?
+arbeid.tex:43:XXX meir om framgangsmåte her!
+konklusjon.tex:7:XXX MEIR HER
+konklusjon.tex:11:XXX MÅ OPPDATERE UTSTYRET
+konklusjon.tex:13:XXX SÅ GJERE FAKTISKE MÅLINGAR PÅ BIOFILM
