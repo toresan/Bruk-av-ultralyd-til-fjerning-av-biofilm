@@ -19,23 +19,35 @@
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 \title{Bruk av ultralyd til fjerning av biofilm.}
-\author{Tore Sandbakk}
+\author{Tore Sandbakk \and Veileder: Tone Berg\\\\Institutt for Elektronikk og Telekommunikasjon\\Noregs Teknisk- og Naturvitenskaplege Universitet}
 \date{Trondheim, \today}                                           % Activate to display a given date or no date
 
 \begin{document}
-\maketitle
-\thispagestyle{empty}
+%\maketitle
+%\thispagestyle{empty}
+\input{framside}
+\clearpage
 
 \newpage
 \thispagestyle{empty}
+\input{oppgavetekst}
+\clearpage
 
+\newpage
+\thispagestyle{empty}
 \input{abstract}
+\clearpage
+
+\newpage
+\thispagestyle{empty}
+\clearpage
 
 \newpage
 \thispagestyle{empty}
 \tableofcontents
-\thispagestyle{empty}
-\listoftables
+\clearpage
+
+\newpage
 \thispagestyle{empty}
 \listoffigures
 \thispagestyle{empty}
@@ -61,10 +73,6 @@
 \clearpage
 
 \newpage
-\bibliographystyle{IEEEtran}
-\bibliography{Bibliografi} 
-%\input{kjelder}
-
 \appendix
 
 \newpage
@@ -73,5 +81,9 @@
 
 \newpage
 \input{tabellar}
+
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{Bibliografi} 
 
 \end{document} 

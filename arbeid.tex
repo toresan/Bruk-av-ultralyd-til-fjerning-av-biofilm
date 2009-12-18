@@ -5,10 +5,10 @@ Følgjande utstyr blei nytta i samband med dette prosjektet:
 	\item Bandelin Sonorex Lifelong RK 255 H \textit{(Serienr.: 316.00024319.013)}
 	\item Wavetek 178 \unit{50}{\mega\hertz} Programmable Waveform Synthesizer \textit{(Serienr.: AC6590409)}
 	\item ENI 240L RF Power Amplifier \textit{(Serienr.: 1019)}
-	\item Skipper $11\text{ x }{19}^\circ$ Transducer \textit{(Serienr.: ikkje tilgjengeleg)}
+	\item Skipper $11\text{ x }{19}^\circ$ Transduser \textit{(Serienr.: ikkje tilgjengeleg)}
 	\item Brüel \& Kjær 8103 Hydrofon \textit{(Serienr.: 1080718)}
 	\item Brüel \& Kjær 4223 Hydrofon Kalibrator \textit{(Serienr.: 1152567)}
-	\item Brüel \& Kjær 2635 Ladningsforsterker \textit{(Serienr.: 1156191)}
+	\item Brüel \& Kjær 2635 Ladningsforsterkar \textit{(Serienr.: 1156191)}
 	\item LeCroy 9410 Dual \unit{150}{\mega\hertz} Oscilloscope \textit{(Serienr.: 94102589)}
 	\item RME Fireface 800 lydkort \textit{(Serienr.: 22354109)}
 \end{itemize}
@@ -20,24 +20,22 @@ Og vidare ein Macbook Pro med følgjande programvare:
 	\item Matlab R2009b
 \end{itemize}
 
-Det kan vere viktig å merke seg avgrensingane ved ustyret i denne lista. Ved måling gjennom RME lydkortet og vidare til PC har vi ei øvre grense for kva frekvensar vi kan måle på grunn av lydkortet sin maksimale samplingsrate på \unit{192}{\kilo\hertz} som ved Nyquist sitt teorem presentert på side \pageref{nyquist} gjev oss den øvre grensa på \unit{96}{\kilo\hertz}. Ladningsforsterkaren til Brüel \& Kjær gjev oss óg ein øvre frekvens ved måling på oscilloskopet som i manualen er gitt som \unit{200}{\kilo\hertz} \cite{ladnforsterker} og i tillegg har hydrofonen ein øvre frekvens gitt i manualen som \unit{180}{\kilo\hertz} \cite{hydrofon}. Transduceren har høgast virkningsgrad ved \unit{38}{\kilo\hertz}. 
+Det kan vere viktig å merke seg avgrensingane ved ustyret i denne lista. Ved måling gjennom RME lydkortet og vidare til PC har vi ei øvre grense for kva frekvensar vi kan måle på grunn av lydkortet sin maksimale samplingsrate på \unit{192}{\kilo\hertz} som ved Nyquist sitt teorem presentert på side \pageref{nyquist} gjev oss den øvre grensa på \unit{96}{\kilo\hertz}. Ladningsforsterkaren til Brüel \& Kjær gjev oss òg ein øvre frekvens ved måling på oscilloskopen som i manualen er gitt som \unit{200}{\kilo\hertz} \cite{ladnforsterker} og i tillegg har hydrofonen ein øvre frekvens gitt i manualen som \unit{180}{\kilo\hertz} \cite{hydrofon}. Transduseren har høgast verknadsgrad ved \unit{38}{\kilo\hertz} \cite{skipper}. 
 
 \subsection{Framgangsmåte}
 \subsubsection*{Bandelin Sonorex}
-For å undersøkje korleis utstyret nytta i \cite{ultraprotese} fungerte blei det gjort målingar i Sonorextanken for å finne eigenskapane til apparatet. Det blei først gjort undersøkingar ved hjelp av oscilloskop for å få eit første inntrykk av signalet i tanken. Deretter blei det gjort målingar gjennom eit lydkort til ein PC. For å få korrekte verdiar blei dei utført målingar både med hydrofon i kalibrator og så med hydrofon i tanken som deretter blei korrigert i Matlab med kode vist i appendiks \ref{sec:Kode}. Kalibreringsdata blei henta frå \cite{calibrator}. Hydrofonen blei kobla på ein ladningsforsterker frå Brüel \& Kjær som vidare blei kobla på oscilloskop og til lydkortet. På PC'en vart opptaka gjort i Logic Pro før dei så blei behandla i Matlab.
+I \cite{ultraprotese} blei det nytta ein Bandelin Sonorex ultralydtank til forsøka. For å undersøkje korleis dette utstyret fungerte blei det gjort målingar i Sonorextanken for å finne eigenskapane til apparatet. Det blei først gjort undersøkingar ved hjelp av oscilloskop for å få eit første inntrykk av signalet i tanken. Deretter blei det gjort målingar gjennom eit lydkort til ein PC. For å få korrekte verdiar blei dei utført målingar både med hydrofon i kalibrator og så med hydrofon i tanken som deretter blei korrigert i Matlab med kode vist i appendiks \ref{sec:Kode}. Kalibreringsdata blei henta frå \cite{calibrator}. Hydrofonen blei kopla på ein ladningsforsterkar frå Brüel \& Kjær som vidare blei kopla på oscilloskop og til lydkortet. På PC'en blei opptaka gjort i Logic Pro før dei så blei behandla i Matlab.
 
 \subsubsection*{Eige oppsett}
-I målingar med eige oppsett blei ustyret satt opp som vist i figur \ref{fig:maaleoppsett}.
+I målingar med eige oppsett blei ustyret sett opp som vist i figur \ref{fig:maaleoppsett}.
 
 \begin{figure}[htbp]
 	\centering
   	\includegraphics[width=0.8\textwidth]{bilete/maaleoppsett.pdf}
-  	\caption[Måleoppsett]{Figuren viser korleis måleoppsettet har blitt satt opp. Hydrofonen hadde same plassering både for målingar med og uten glaskolbe. 	For målingar i Sonorex-tanken har same måleoppsett blitt nytta på målesida. I tillegg til utstyret vist på figuren blei det også nytta eit termometer for å halde 	auge med temperaturen i vatnet.}
+  	\caption[Måleoppsett]{Figuren viser korleis måleoppsettet har blitt sett opp. Hydrofonen hadde same plassering både for målingar med og uten glaskolbe. For målingar i Sonorex-tanken har same måleoppsett blitt nytta på målesida. I tillegg til utstyret vist på figuren blei det også nytta eit termometer for å halde auge med temperaturen i vatnet.}
   	\label{fig:maaleoppsett}
 \end{figure}
 
-Hydrofonen blei plassert med eit stativ \unit{34}{\centi\metre} frå transduceren midt på den retninga der den sender ut sterkast signal, altså ${0}^\circ$ på transduceren. Transduceren blei plassert rett ved ein av kortveggane i måletanken. Dimensjonen på tanken er \unit{1x0.5x0.5}{\metre}.
+Hydrofonen blei plassert med eit stativ \unit{34}{\centi\metre} frå transduseren midt på den retninga der den sender ut sterkast signal, altså ${0}^\circ$ på transduceren. Transduceren blei plassert rett ved ein av kortveggane i måletanken. Dimensjonen på tanken er \unit{1x0.5x0.5}{\metre}.
 
-Frekvensgeneratoren blei stilt inn på ynskt frekvens i \emph{burst} modus slik at generatoren berre sendte ut eit visst antal perioder i pulsar med \unit{2}{\second} mellomrom. Effektforsterkaren opererer optimalt når den får inn \unit{1}{\volt} Pk - Pk, så generatoren blei stilt inn til denne amplituden. Målingar blei også gjort med ein glaskolbe fylt med vatn rundt hydrofonen og blei så godt det lét seg gjere plassert på akkurat same posisjon som utan glaskolbe.
-
-XXX meir om framgangsmåte her!
+Frekvensgeneratoren blei stilt inn på ynskt frekvens i \emph{burst} modus slik at generatoren berre sendte ut ei viss mengd periodar i pulsar med \unit{2}{\second} mellomrom. Effektforsterkaren opererer optimalt når den får inn \unit{1}{\volt} Pk - Pk, så generatoren blei stilt inn til denne amplituden. Målingar blei også gjort med ein glaskolbe fylt med vatn rundt hydrofonen og blei så godt det lét seg gjere plassert på akkurat same posisjon som utan glaskolbe. Som i Sonorextanken blei det først gjort målingar med oscilloskop for å få eit førsteinntrykk av signala i måletanken før ein så gjorde målingar med lydkort til PC. Desse målingane blei også kalibrert opp mot ein kalibrator frå Brüel \& Kjær.
